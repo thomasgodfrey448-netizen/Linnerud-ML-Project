@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.datasets import load_linnerud
 from sklearn.linear_model import LinearRegression
 
-# Load Dataset
+# Load Dataself
 data = load_linnerud(as_frame=True)
 X = data.data
 y = data.target
@@ -69,5 +69,5 @@ if st.button("Predict"):
     st.write(f"**Predicted Pulse:**    {prediction[0][2]:.2f} bpm")
 
     # Refreshing
-    if st.button("Refresh Page"):
-        st.retun()
+    if st.button("Refresh"):
+        st.rerun()

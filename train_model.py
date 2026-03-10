@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 data = load_linnerud(as_frame=True)
 X = data.data
 y = data.target
-
+23zz bbn
 # Train model
 model = LinearRegression()
 model.fit(X, y)
