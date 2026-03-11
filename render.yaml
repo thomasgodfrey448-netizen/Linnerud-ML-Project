@@ -1,0 +1,16 @@
+# render.yaml - Render deployment configuration
+services:
+  - type: web
+    name: linnerud-ML-Project
+    env: python
+    branch: main 
+    region: oregon  
+    plan: free  
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run linnerudAPP.py --server.port $PORT --server.address 0.0.0.0
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        fromService: web  # Render dynamically assigns PORT
+    healthCheckPath: /
+    pullRequestPreviewsEnabled: true
