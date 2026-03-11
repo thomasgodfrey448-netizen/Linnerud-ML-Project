@@ -36,8 +36,8 @@ Linnerud dataset contain 20 observation and 6 variables, where by 3 are feature 
 ### 2. **Statistical Summary**
 - Calculated **mean, median, standard deviation, min, max, and quartiles** for all features and target variables.
 - Observations:
-  - `Chins` and `Situps` have moderate spread and a few high-value outliers.
-  - `Jumps` has slightly lower variability.
+  - `Chins` and `Situps` exercise ability varies widely between individuals
+  - `Jumps` higher variability some individuals show exceptionally high exercise performance.
   - `Weight` and `Waist` are positively correlated.
   - `Pulse` has smaller variance, showing less dependency on exercises.
 
@@ -67,7 +67,8 @@ Linnerud dataset contain 20 observation and 6 variables, where by 3 are feature 
 
 ### 6. **Correlation Analysis**
 - **Heatmap** was created to visualize correlations:
-  - `Situps` strongly correlated with `Weight` (moderate positive correlation).
+  - `Weight` strongly correlated with `Waist` (positive correlation).
+  - `Situps` negative moderate correlated with `Waist` and `Weight`.
   - `Chins` moderately correlated with `Waist`.
   - `Pulse` weakly correlated with all exercises.
 - Correlation values guided feature importance for modeling.
@@ -162,3 +163,4 @@ obtain predicted body measurements through a Streamlit web application hosted on
 ```bash
 git clone https://github.com/yourusername/linnerud-fitness.git
 cd linnerud-fitness
+
