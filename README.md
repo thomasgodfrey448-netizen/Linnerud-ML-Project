@@ -156,11 +156,10 @@ obtain predicted body measurements through a Streamlit web application hosted on
 
 ---
 
-## How to Run
+## Live Demo
 
-1. **Clone the repository:**
+Check out the live version of my project here: [Linnerud Fitness ML Project](https://linnerud-fitness-ml-projects.onrender.com)
 
-```bash
-git clone https://github.com/yourusername/linnerud-fitness.git
-cd linnerud-fitness
+This project is a machine learning implementation of the Linnerud Fitness dataset. You can explore the data, run predictions, and visualize results directly on the web.
+
 
